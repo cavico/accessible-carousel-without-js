@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Accessible Carousel without JS!</title>
+  </head>
+  <body>
+    <div id="carousel" class="carousel">
+      <input
+        class="carousel-active"
+        type="radio"
+        id="carousel-1"
+        name="carousel"
+        aria-hidden="true"
+        hidden
+        checked="checked"
+      />
+      <div class="carousel-item">
+        <div class="carousel-controls" aria-hidden="true">
+          <label for="carousel-3" class="carousel-control prev" title="Prev"
+            >«</label
+          >
+          <label for="carousel-2" class="carousel-control next" title="Next"
+            >»</label
+          >
+        </div>
+        <img
+          src="http://via.placeholder.com/1200x300/444/fff"
+          alt="First slide"
+        />
+      </div>
+
+      <input
+        class="carousel-active"
+        type="radio"
+        id="carousel-2"
+        name="carousel"
+        aria-hidden="true"
+        hidden
+      />
+      <div class="carousel-item">
+        <div class="carousel-controls" aria-hidden="true">
+          <label for="carousel-1" class="carousel-control prev" title="Prev"
+            >«</label
+          >
+          <label for="carousel-3" class="carousel-control next" title="Next"
+            >»</label
+          >
+        </div>
+        <img
+          src="http://via.placeholder.com/1200x300/777/000"
+          alt="Blank image"
+        />
+        <div class="carousel-caption">
+          <h2>
+            SECOND SLIDE <br /><small>with an <i>amazing caption</i></small>
+          </h2>
+          <p>Aren`t you impressed?</p>
+        </div>
+      </div>
+
+      <input
+        class="carousel-active"
+        type="radio"
+        id="carousel-3"
+        name="carousel"
+        aria-hidden="true"
+        hidden
+      />
+      <div class="carousel-item">
+        <div class="carousel-controls" aria-hidden="true">
+          <label for="carousel-2" class="carousel-control prev" title="Prev"
+            >«</label
+          >
+          <label for="carousel-1" class="carousel-control next" title="Next"
+            >»</label
+          >
+        </div>
+        <img
+          src="http://via.placeholder.com/1200x300/ccc/077"
+          alt="Third slide"
+        />
+      </div>
+
+      <ol
+        class="carousel-indicators"
+        aria-label="Carousel navigation"
+        aria-hidden="true"
+      >
+        <li>
+          <label
+            for="carousel-1"
+            class="carousel-indicator"
+            title="Jump to carousel item #1"
+            >●</label
+          >
+        </li>
+        <li>
+          <label
+            for="carousel-2"
+            class="carousel-indicator"
+            title="Jump to carousel item #2"
+            >●</label
+          >
+        </li>
+        <li>
+          <label
+            for="carousel-3"
+            class="carousel-indicator"
+            title="Jump to carousel item #3"
+            >●</label
+          >
+        </li>
+      </ol>
+    </div>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js"></script>
+  </body>
+</html>
